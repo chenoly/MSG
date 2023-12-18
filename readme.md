@@ -18,7 +18,7 @@ The test codes are mainly divided two parts:
 1. Generate a MSG by given parameters:
    ![scheme](./Images/mixed-bit.png)
    ```python
-    python encode_one_msg.py --save_path Images/ --data hello --N 36 --alpha 0.5 --gamma 0.1
+    python encode_one_msg.py --save_path Images/ --data hello --N 36 --alpha 0.7 --gamma 0.06
    
 2. Detect and Decode MSG from a captured image
    ![scheme](./Images/corrected.png)
@@ -36,3 +36,4 @@ The test codes are mainly divided two parts:
 	pages        = {1--4}
 }
 ```
+
