@@ -1,8 +1,8 @@
-import cv2
 import utils
+import hashlib
 import numpy as np
 from numpy import ndarray
-from typing import Tuple, List, Any, Union
+from typing import Tuple, List, Any
 
 
 class MSG:
@@ -37,6 +37,18 @@ class MSG:
                 else:
                     self.template_0[i, j] = 1
 
+    def bits2seed(self, bits):
+        """
+
+        :param bits:
+        :return:
+        """
+        byte_stream = bytes(bits)
+        sha256_hash = hashlib.sha256(byte_stream).digest()
+        seed = int.from_bytes(sha256_hash[:4], byteorder='big', signed=False)
+        return seed
+
+
     def Encode(self, data: str, alpha: float = 0.7, gamma: float = 0.06):
         """
 
@@ -50,6 +62,7 @@ class MSG:
         N = round(np.sqrt(len(bits)))
         com_N = N ** 2 - len(bits)
         bits_embed = bits + [0 for _ in range(com_N)]
+        np.random.seed(self.bits2seed(bits_embed))
         msg = np.zeros(shape=(self.box_size * N, self.box_size * N))
         I_CDP = np.random.binomial(1, alpha, size=(self.box_size * N, self.box_size * N))
         delta = gamma * min(abs(np.sum(self.template_1 * self.K_x)), abs(np.sum(self.template_0 * self.K_x)))
