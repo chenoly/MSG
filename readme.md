@@ -24,6 +24,7 @@ We proposed Mixed-bit Sampling Graphic (MSG) by extending the Copy Detection Pat
 4. numpy
 5. scikit-image
 6. scipy
+7. hashlib
 
 ## Usage
 The test codes are mainly divided two parts:
