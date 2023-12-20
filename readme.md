@@ -12,7 +12,8 @@ Department of Computer Science, Ningbo University
 # Introduction
 
 1. Official implementation of the paper titled "Mixed-bit Sampling Graphic: When Watermarking Meets Copy Detection Pattern," as presented in IEEE Signal Processing Letters.
-2. The corresponding dataset mentioned in this work is available at https://www.kaggle.com/datasets/chenoly/msg-cdp-dataset
+2. The corresponding dataset mentioned in this work is available at https://www.kaggle.com/datasets/chenoly/msg-cdp-dataset.
+3. We have made a demo video, which is available at https://youtu.be/-70hjwh_r4g.
 ## Overview
 We proposed Mixed-bit Sampling Graphic (MSG) by extending the Copy Detection Pattern (CDP) with a watermarking functionality. The watermark bits embedded by using random sampling of white pixels from two orthogonal templates. We formulated the generation of MSG as a constrained optimization problem and developed an algorithm to efficiently solve it. Experimental results demonstrate that MSG maintains the same anti-counterfeiting performance as conventional CDP, while providing watermarking capabilities that CDP lacks.
 
