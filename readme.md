@@ -20,7 +20,7 @@ We proposed Mixed-bit Sampling Graphic (MSG) by extending the Copy Detection Pat
 ## Requirements
 1. Python
 2. bchlib==0.14.0
-3. opencv-python
+3. opencv-python==3.4.2.16
 4. numpy
 5. scikit-image
 6. scipy
