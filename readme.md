@@ -40,7 +40,7 @@ The test codes are mainly divided two parts:
 
 ## Citing us
 ```bibtex
-@ARTICLE{10376267,
+@ARTICLE{Mixed2024chen,
   author={Chen, Jiale and Dong, Li and Wang, Rangding and Yan, Diqun and Peng, Chengbin},
   journal={IEEE Signal Processing Letters}, 
   title={Mixed-Bit Sampling Graphic: When Watermarking Meets Copy Detection Pattern}, 
