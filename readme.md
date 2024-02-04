@@ -40,13 +40,13 @@ The test codes are mainly divided two parts:
 
 ## Citing us
 ```bibtex
-@journal{jiale2023spl,
-	title        = {Mixed-bit Sampling Graphic: When Watermarking Meets Copy Detection Pattern},
-	author       = {Jiale Chen, Li Dong, Rangding Wang, Diqun Yan and Chengbin Peng},
-	year         = {2023},
-	month        = {December},
-	booktitle    = {IEEE Signal Processing Letters},
-	pages        = {1--4}
+@ARTICLE{10376267,
+  author={Chen, Jiale and Dong, Li and Wang, Rangding and Yan, Diqun and Peng, Chengbin},
+  journal={IEEE Signal Processing Letters}, 
+  title={Mixed-Bit Sampling Graphic: When Watermarking Meets Copy Detection Pattern}, 
+  year={2024},
+  volume={31},
+  pages={286-290},
 }
 ```
 
